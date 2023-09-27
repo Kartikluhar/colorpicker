@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Color picker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="color-box" id="color-box"></div>
+            <div class="input-color-show">
+                <input type="color" value="#4edfd5" class="input-color" id="input-color" oninput="changeColor()">
+            </div>
+            <div class="text-area">
+                <textarea class="textarea" id="textarea" disabled>background-color: aquamarine;</textarea>
+            </div>
+            <div class="button-box">
+                <button class="button" id="button" onclick="copycase()">Copy color..</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

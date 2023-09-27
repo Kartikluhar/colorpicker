@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body{
+   height: 100vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color:#4edfd5;
+}
+
+.box{
+    height: 600px;
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.color-box{
+    height: 200px;
+    width: 100%;
+    background-color: #4edfd5;
+    border-radius: 15px;
+}
+
+.input-color-show{
+    height: 100px;
+    width: 100%;
+    /* background-color: blue; */
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.input-color{
+    height: 3rem;
+    width: 5rem;
+    margin: 15px;
+    border: none;
+}
+
+.text-area{
+    height: 100px;
+    width: 100%;
+}
+
+.textarea{
+    text-align: left;
+    padding: 0.6rem;
+    /* margin-right: 3px; */
+    color: black;
+    font-weight: 700;
+    height: 90px;
+    width: 97%;
+    border-radius: 10px;
+    border: 1px solid black;
+    resize: none;
+}
+
+.button-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    /* text-align: center; */
+    height: 100px;
+    width: 100%;
+}
+
+.button{
+    border: none;
+    background-color: #4edfd5;
+    padding: 5px;
+    height: 4rem;
+    width: 10rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    transition: all ease 0.4s;
+}
+
+.button:hover{
+    background-color: rgb(41, 234, 189);
+}
+    
+@media screen and (max-width: 450px){
+
+    .box{
+        width: 300px;
+        height: 500px;
+    }
+
+    .input-color-show{
+        height: 70px;
+    }
+
+    .button{
+        font-size: medium;
+        height: 3rem;
+        width: 7.5rem;
+    }
+
+}
+
+@media screen and (max-width: 350px){
+
+    .button-box{
+        height: 70px;
+    }
+
+    .box{
+        height: 450px;
+        width: 250px;
+    }
+
+    .color-box{
+        height: 150px;
+    }
+
+}
+
+@media screen and (max-width: 300px){
+
+    .box{
+        height: 400px;
+        width: 200px;
+    }
+
+    .color-box{
+        height: 130px;
+    }
+
+}
