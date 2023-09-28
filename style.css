@@ -8,7 +8,7 @@ body{
    height: 100vh;
 }
 
-.container{
+.container-box{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,12 +17,21 @@ body{
     background-color:#4edfd5;
 }
 
+/* .myAlert{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    /* padding: 0; */
+/* }  */
+
 .box{
     height: 600px;
     width: 400px;
     background-color: white;
     border-radius: 15px;
     padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .color-box{
@@ -30,6 +39,7 @@ body{
     width: 100%;
     background-color: #4edfd5;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .input-color-show{
@@ -73,6 +83,7 @@ body{
     /* text-align: center; */
     height: 100px;
     width: 100%;
+    flex-direction: column;
 }
 
 .button{
@@ -84,12 +95,19 @@ body{
     border-radius: 10px;
     font-size: 1.3rem;
     transition: all ease 0.4s;
+    margin-bottom: 15px;
+    
 }
 
 .button:hover{
     background-color: rgb(41, 234, 189);
 }
-    
+   
+.copy-show{
+    color: red;
+    display: none;
+}
+
 @media screen and (max-width: 450px){
 
     .box{
