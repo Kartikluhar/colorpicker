@@ -78,10 +78,10 @@ body{
 .button-box{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 10px;
     /* text-align: center; */
-    height: 100px;
+    height: 67px;
     width: 100%;
     flex-direction: column;
 }
@@ -93,10 +93,10 @@ body{
     height: 4rem;
     width: 10rem;
     border-radius: 10px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     transition: all ease 0.4s;
     margin-bottom: 15px;
-    
+    font-weight: 700;
 }
 
 .button:hover{
@@ -106,6 +106,12 @@ body{
 .copy-show{
     color: red;
     display: none;
+    text-align: center;
+}
+
+.flex-btn{
+    display: flex;
+    gap: 5px;
 }
 
 @media screen and (max-width: 450px){

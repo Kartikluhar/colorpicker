@@ -20,12 +20,20 @@
                 <input type="color" value="#4edfd5" class="input-color" id="input-color" oninput="changeColor()">
             </div>
             <div class="text-area">
-                <textarea class="textarea" id="textarea" disabled>background-color: #4edfd5;</textarea>
+                <textarea class="textarea" id="textarea" disabled>background-color: #4edfd5;
+color: #4edfd5</textarea>
             </div>
-            <div class="button-box">
-                <button class="button" id="button" onclick="copycase()">Copy color..</button>
-                <h6 class="copy-show" id="copy-show">Color copied to your clipboard</h6>
+            <div class="flex-btn">
+
+                <div class="button-box">
+                    <button class="button" id="button" onclick="copybackgroundcase()">Copy background..</button>
+                </div>
+                <div class="button-box">
+                    <button class="button" id="button" onclick="copycolorcase()">Copy color..</button>
+                </div>
             </div>
+            <h6 class="copy-show" id="copy-show-color">Color copied to your clipboard</h6>
+            <h6 class="copy-show" id="copy-show">Background Color copied to your clipboard</h6>
         </div>
     </div>
 </body>
